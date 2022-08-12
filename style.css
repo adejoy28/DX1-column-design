@@ -1,0 +1,302 @@
+/* basic syntax  || CSS decalration */
+/* External, inline, Internal */
+/* Selector {property:value;} */
+/* Select: TAG, ID , CLASSES */
+
+/* 
+csss seecltion by Tag
+
+h1 {
+    color: orange;
+    border: 1px solid black;
+    display: inline;
+} */
+
+/* css selction by Classes */
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* Padding, Margin, Border --- Box model */
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-family: 'Manrope', sans-serif;
+}
+
+.parent-container {
+    /* border: 3px solid black; */
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    max-width: 1500px;
+    margin-left: auto;
+    /* margin-right: auto; */
+    /* margin-bottom: 40px;
+    margin-right: auto;
+    margin-left: auto; */
+
+    /* Top right bottom left */
+    margin: 0 auto 40px auto;
+
+}
+
+.first-div {
+    border: 1px solid #d9d9d9;
+    height: 100%;
+    width: 50%;
+    background: #d9d9d9;
+    /* padding Top,Right,Botton and Left --clockwise direction*/
+    padding: 40px 20px 20px 20px;
+
+    /* Two value shorthand */
+
+    /* Long method */
+    /* padding-left: 20px; */
+    /* padding-right: 20px; */
+}
+
+
+
+.second-div {
+    display: flex;
+    border: 1px solid tomato;
+    height: 100%;
+    width: 50%;
+    background: url(./images/image1.jpg);
+    /* Tutorial--using background-position */
+    /* background: url(./images/dots.png); */
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: cover;
+
+
+    /* first: horizontal second: vertical */
+    /* background-position: 10px bottom; */
+    position: relative;
+}
+
+
+.headerwriteup {
+    color: tomato;
+}
+
+.Smartline {
+    height: 16px;
+    width: 224px;
+    background: #ff6347;
+    color: #87ceeb;
+}
+
+.Project-logoname {
+    margin-bottom: 30px;
+}
+
+.main-headertext {
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 40px;
+}
+
+.header-linkholder {
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    z-index: 3;
+    width: 100%;
+}
+
+.background-overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 99, 71, 0.2);
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+/* Middle section */
+.middle-contentholder {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 1500px;
+    /* top and bottom ---- left and right */
+    margin: 0 auto;
+}
+
+.middlediv-left {
+    background: #D9D9D9;
+    width: 300px;
+    height: 400px;
+    /* top right bottom left -- clockwise direction */
+    padding: 25px;
+}
+
+.middlediv-right {
+    /* border: 2px solid black; */
+    height: 460px;
+    width: 320px;
+    margin-left: 20px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+
+}
+
+p {
+    /* top and bottom ----- left and right */
+    margin: 10px 0;
+}
+
+.middlediv-heading {
+    margin-bottom: 20px;
+}
+
+/* third section */
+.third-section {
+    display: flex;
+    justify-content: center;
+    background: #D9D9D9;
+    /* top and bottom ---- left and right */
+    padding: 40px 0;
+    max-width: 1500px;
+    margin-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+.thirdsection-leftdiv,
+.thirdsection-rightdiv {
+    width: 330px;
+    height: 430px;
+}
+
+.thirdsection-leftdiv {
+    background: #d9d9d9;
+}
+
+.thirdsection-rightdiv {
+    background: #FF6347;
+    /* top right bottom left ----clockwise direction */
+    padding: 15px 25px 15px 25px;
+}
+
+/* footer section */
+.footer {
+    background: #FF6347;
+    color: white;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* css Combinators ---- */
+/* .footer-icon svg { */
+/* Figuring this out----- */
+/* font-size: 25px; */
+/* 
+    width: 20px;
+} */
+.footer-iconholder {
+    /* border: 3px solid black; */
+    width: 200px;
+    text-align: center;
+}
+
+/* Combinators */
+
+.iconholder svg {
+    width: 20px;
+    height: 20px;
+    /* color: white; */
+    /* svgs have a special property for their color */
+    fill: white;
+}
+
+/* Mobile media query---- for mobile design */
+
+@media screen and (max-width:900px) {
+
+    /* css property we give here */
+    p {
+        font-size: 16px;
+    }
+
+    .parent-container {
+        height: 550px;
+    }
+
+    .main-headertext {
+        font-size: 25px;
+    }
+
+    .first-div {
+        width: 60%;
+    }
+
+    .second-div {
+        width: 40%;
+    }
+
+    .Smartline {
+        width: 200px;
+    }
+
+    .header-linkholder {
+        flex-direction: column;
+        /* border: 3px solid black; */
+        justify-content: flex-start;
+        padding-top: 40px;
+        padding-left: 40px;
+    }
+
+    .header-linkholder h4 {
+        margin-bottom: 20px;
+    }
+
+    /* middle section styling */
+    .middle-contentholder {
+        flex-direction: column;
+    }
+
+    .middlediv-right {
+        margin-left: 0;
+    }
+
+    .middlediv-left {
+        margin-bottom: 30px;
+    }
+
+    /* Third section */
+    .third-section {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .thirdsection-leftdiv {
+        margin-top: 30px;
+    }
+
+    /* Footer section */
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
