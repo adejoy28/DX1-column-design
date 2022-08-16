@@ -1,167 +1,101 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
-
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>DX | Column Design</title>
-
+    <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Manrope:wght@500&display=swap"
-
-        rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./fontawesome/css/all.css">
     <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
+    <div class="parent-div">
 
-    <!-- This is my first writeup on my website
+        <div class="left-div">
+            <!-- br -- empty tags -->
 
-    <h1>This is heading 1</h1>
-
-    <h1> This is the second heading 1 </h1> -->
-
-    <!-- BEM -- block element modifier -->
-
-    <div class="parent-container">
-
-        <div class="first-div">
-
-            <h4 class="Project-logoname">THE2 <span class="headerwriteup">COLUMN</span></h4>
-
-            <h1 class="main-headertext">BUILDING <br />
-
-                APPLICATIONS <br />FOR THE WEB</h1>
-
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi expedita corporis iste, voluptatum
-
-                repudiandae odio veritatis animi quasi illum cupiditate, suscipit sint rerum corrupti magnam quis, sed
-
+            <h4 class="header-logotext">THE 2 <span>COLUMN </span> </h4>
+            <h1 class="header-headingtext">BUILDING <br /> APPLICATIONS <br />FOR THE WEB</h1>
+            <p class="header-longtext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi expedita
+                corporis iste,
+                voluptatumrepudiandae odio veritatis animi quasi illum cupiditate, suscipit sint rerum corrupti magnam
+                quis, sed
                 a. Inventore, vero?</p>
 
-            <div class="Smartline"></div>
-
-            <!-- h1-h6 -->
-
-        </div>
-
-        <div class="second-div">
-
-            <div class="background-overlay"></div>
-
-            <div class="header-linkholder">
-
-                <h4>HOME</h4>
-
-                <h4>ABOUT</h4>
-
-                <h4>CONTACT</h4>
+            <div class="smart-line">
 
             </div>
-
         </div>
 
+
+        <div class="right-div">
+            <div class="link-holder">
+                <h4>HOME</h4>
+                <h4>ABOUT</h4>
+                <h4>CONTACT</h4>
+            </div>
+
+            <div class="bg-overlay"></div>
+
+        </div>
     </div>
 
-    <section class="middle-contentholder">
+    <section class="second-section">
 
-        <div class="middlediv-left">
-
-            <h4 class="middlediv-heading">THE 2 COLUMN</h4>
-
+        <div class="secondsection-left">
+            <h4>THE 2 COLUMN</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Excepturi expedita</p>
-
             <p>corporis iste, voluptatum repudiandae odio veritatis animi quasi illum cupiditate, suscipit sint rerum c
-
             </p>
-
             <p>orrupti magnam quis, sed a. Inventore, vero</p>
-
         </div>
 
-        <div class="middlediv-right">
-
-            <img src="./images/image2.jpg" alt="middleright div image">
+        <div class="secondsection-right">
+            <img src="./images/image2.jpg" alt="">
 
         </div>
 
     </section>
 
-    <!-- BEM convention -->
-
-    <section class="third-section">
-
-        <div class="thirdsection-leftdiv">
-
-            <img src="./images/image4.jpg" alt="third section image">
-
+    <section class="thirdsection">
+        <div class="thirdsection-left">
+            <img src="./images/image4.jpg" alt="">
         </div>
-
-        <div class="thirdsection-rightdiv">
-
-            <!-- Shift + alt +dwn arrow key -->
+        <div class="thirdsection-right">
 
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Excepturi expedita</p>
-
             <p>corporis iste, voluptatum repudiandae odio veritatis animi quasi illum cupiditate, suscipit sint rerum c
-
             </p>
-
             <p>orrupti magnam quis, sed a. Inventore, vero</p>
-
         </div>
-
     </section>
 
     <section class="footer">
-
         <p>Built by Israel Akinwumi at DxFrontend Bootcamp1.0</p>
+        <div class="iconcontainer">
 
-        <div class="footer-iconholder">
+            <span class="iconholder"> <i class="fa-brands fa-facebook-f"></i></span>
 
-            <span class="iconholder">
-
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
-
-                    <!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-
-                    <path
-
-                        d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" />
-
-                </svg>
-
-            </span>
-
-            <span class="iconholder">
-
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-
-                    <!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-
-                    <path
-
-                        d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
-
-                </svg>
-
-            </span>
+            <span class="iconholder"><i class="fa-brands fa-linkedin"></i></span>
 
         </div>
 
-    </section>
 
+        <!-- <div class="icon-method2">
+            <span class="method2-iconholder">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"> -->
+        <!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. fill="#fff" -->
+        <!-- <path
+                        d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" />
+                </svg>
+            </span>
+        </div> -->
+    </section>
 </body>
 
 </html>

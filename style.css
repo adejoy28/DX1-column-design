@@ -1,302 +1,268 @@
-/* basic syntax  || CSS decalration */
-/* External, inline, Internal */
-/* Selector {property:value;} */
-/* Select: TAG, ID , CLASSES */
+/* Box- model */
+/* Flexbox */
 
-/* 
-csss seecltion by Tag
-
-h1 {
-    color: orange;
-    border: 1px solid black;
-    display: inline;
-} */
-
-/* css selction by Classes */
+/* universal selector */
 * {
     margin: 0;
+    /* this Box-sizing makes it easier to maintain the same with or height if given */
     box-sizing: border-box;
 }
 
-
-/* Padding, Margin, Border --- Box model */
-
 body {
     font-family: 'Inter', sans-serif;
-    font-family: 'Manrope', sans-serif;
 }
 
-.parent-container {
+.parent-div {
     /* border: 3px solid black; */
-    height: 400px;
     display: flex;
+    /* flex-direction: column; */
+
+    /* this is added by default */
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
+
+    /* margin-left: auto;
+    margin-right: auto; */
+
+    margin: 0 auto;
     max-width: 1500px;
-    margin-left: auto;
-    /* margin-right: auto; */
-    /* margin-bottom: 40px;
-    margin-right: auto;
-    margin-left: auto; */
-
-    /* Top right bottom left */
-    margin: 0 auto 40px auto;
-
 }
 
-.first-div {
-    border: 1px solid #d9d9d9;
-    height: 100%;
-    width: 50%;
+.left-div {
+    padding: 20px;
     background: #d9d9d9;
-    /* padding Top,Right,Botton and Left --clockwise direction*/
-    padding: 40px 20px 20px 20px;
-
-    /* Two value shorthand */
-
-    /* Long method */
-    /* padding-left: 20px; */
-    /* padding-right: 20px; */
-}
-
-
-
-.second-div {
-    display: flex;
-    border: 1px solid tomato;
-    height: 100%;
+    height: 400px;
     width: 50%;
-    background: url(./images/image1.jpg);
-    /* Tutorial--using background-position */
-    /* background: url(./images/dots.png); */
-    /* background-size: cover; */
-    background-repeat: no-repeat;
-    background-position: bottom left;
-    background-size: cover;
-
-
-    /* first: horizontal second: vertical */
-    /* background-position: 10px bottom; */
-    position: relative;
+    /* margin-left: 20px; */
+    /* padding-left: 30px; */
+    /* top right bottom left ---clockwise direction */
+    /* padding: 30px 30px 30px 30px; */
 }
 
+.right-div {
+    /* background: #ff6347; */
+    background: url(./images/image1.jpg);
+    background-size: cover;
+    background-position: bottom left;
+    height: 400px;
+    width: 50%;
+    position: relative;
+    display: flex;
+}
 
-.headerwriteup {
+.smart-line {
+    background: #FF6347;
+    height: 16px;
+    width: 224px;
+}
+
+span {
     color: tomato;
 }
 
-.Smartline {
-    height: 16px;
-    width: 224px;
-    background: #ff6347;
-    color: #87ceeb;
-}
-
-.Project-logoname {
-    margin-bottom: 30px;
-}
-
-.main-headertext {
+.header-logotext {
     margin-bottom: 20px;
 }
 
-p {
-    margin-bottom: 40px;
+.header-headingtext {
+    margin-bottom: 20px;
 }
 
-.header-linkholder {
-    color: white;
+.header-longtext {
+    margin-bottom: 35px;
+}
+
+.link-holder {
+    /* border: 3px solid black; */
     display: flex;
     justify-content: space-evenly;
-    z-index: 3;
+    color: white;
+    /* top and bottom ---- left and right */
+    padding: 20px 0;
     width: 100%;
+    z-index: 3;
 }
 
-.background-overlay {
+/* background overlay */
+.bg-overlay {
     width: 100%;
     height: 100%;
     background: rgba(255, 99, 71, 0.2);
     position: absolute;
     top: 0;
-    right: 0;
-    z-index: 1;
+    left: 0;
 }
 
-/* Middle section */
-.middle-contentholder {
+/* positioning ---Relative position [absolute] */
+
+/* Second section */
+.second-section {
+    /* margin-top: 40px; */
+    /* border: 3px solid black; */
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
-    max-width: 1500px;
-    /* top and bottom ---- left and right */
+    padding: 50px 0;
     margin: 0 auto;
+    max-width: 1500px;
 }
 
-.middlediv-left {
-    background: #D9D9D9;
+.secondsection-left {
     width: 300px;
     height: 400px;
-    /* top right bottom left -- clockwise direction */
-    padding: 25px;
+    background: #D9D9D9;
+    padding: 40px 25px;
+    text-align: center;
 }
 
-.middlediv-right {
-    /* border: 2px solid black; */
-    height: 460px;
+.secondsection-right {
+    margin-left: 10px;
     width: 320px;
-    margin-left: 20px;
+    height: 460px;
+    background: tomato;
 }
 
+/* 
+h4 {
+    text-align: center;
+} */
+
+p {
+    margin: 10px 0;
+    text-align: left;
+}
+
+/* image reset */
 img {
     width: 100%;
     height: 100%;
-
 }
 
-p {
-    /* top and bottom ----- left and right */
-    margin: 10px 0;
-}
-
-.middlediv-heading {
-    margin-bottom: 20px;
-}
-
-/* third section */
-.third-section {
+/* Third section */
+.thirdsection {
+    background: #D9D9D9;
+    /* border: 3px solid black; */
     display: flex;
     justify-content: center;
-    background: #D9D9D9;
-    /* top and bottom ---- left and right */
-    padding: 40px 0;
+    padding: 50px 0;
+    margin: 0 auto;
     max-width: 1500px;
-    margin-top: 50px;
-    margin-right: auto;
-    margin-left: auto;
-
 }
 
-.thirdsection-leftdiv,
-.thirdsection-rightdiv {
-    width: 330px;
+.thirdsection-left,
+.thirdsection-right {
+    width: 300px;
     height: 430px;
 }
 
-.thirdsection-leftdiv {
-    background: #d9d9d9;
+.thirdsection-left {
+    background: skyblue;
 }
 
-.thirdsection-rightdiv {
+.thirdsection-right {
     background: #FF6347;
-    /* top right bottom left ----clockwise direction */
-    padding: 15px 25px 15px 25px;
+    padding: 30px 25px;
+
 }
 
 /* footer section */
 .footer {
     background: #FF6347;
-    color: white;
     padding: 20px 0;
+    color: white;
     display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
     justify-content: space-evenly;
+    margin: 0 auto;
     max-width: 1500px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
-/* css Combinators ---- */
-/* .footer-icon svg { */
-/* Figuring this out----- */
-/* font-size: 25px; */
-/* 
-    width: 20px;
-} */
-.footer-iconholder {
-    /* border: 3px solid black; */
+.iconholder {
+    color: white;
+    /* font-size: 40px; */
+}
+
+.icon-method2 {
+    border: 3px solid black;
     width: 200px;
-    text-align: center;
 }
 
-/* Combinators */
-
-.iconholder svg {
+.method2-iconholder svg {
     width: 20px;
     height: 20px;
-    /* color: white; */
-    /* svgs have a special property for their color */
     fill: white;
 }
 
-/* Mobile media query---- for mobile design */
+
+/* Monile design --- using media queries */
 
 @media screen and (max-width:900px) {
 
-    /* css property we give here */
+    .right-div,
+    .left-div {
+        height: 550px;
+    }
+
+    .left-div {
+        width: 60%;
+    }
+
+    .right-div {
+        width: 40%;
+    }
+
+    .header-headingtext {
+        font-size: 25px;
+    }
+
     p {
         font-size: 16px;
     }
 
-    .parent-container {
-        height: 550px;
-    }
-
-    .main-headertext {
-        font-size: 25px;
-    }
-
-    .first-div {
-        width: 60%;
-    }
-
-    .second-div {
-        width: 40%;
-    }
-
-    .Smartline {
+    .smart-line {
         width: 200px;
     }
 
-    .header-linkholder {
+    .link-holder {
         flex-direction: column;
-        /* border: 3px solid black; */
         justify-content: flex-start;
-        padding-top: 40px;
+        padding-top: 25px;
         padding-left: 40px;
     }
 
-    .header-linkholder h4 {
+    .link-holder h4 {
         margin-bottom: 20px;
     }
 
-    /* middle section styling */
-    .middle-contentholder {
+
+    /*  second section*/
+    .second-section {
         flex-direction: column;
     }
 
-    .middlediv-right {
+    .secondsection-right {
         margin-left: 0;
+        margin-top: 30px;
     }
 
-    .middlediv-left {
-        margin-bottom: 30px;
-    }
-
-    /* Third section */
-    .third-section {
+    /* third section */
+    .thirdsection {
         flex-direction: column-reverse;
         align-items: center;
     }
 
-    .thirdsection-leftdiv {
-        margin-top: 30px;
+    .thirdsection-right {
+        margin-bottom: 30px;
     }
 
-    /* Footer section */
+    /*  footer section*/
     .footer {
         flex-direction: column;
-        align-items: center;
+        padding: 20px 30px;
+    }
+
+    .footer p {
+        text-align: center;
     }
 
 }
